@@ -1,0 +1,201 @@
+/* Kleuren Schema
+    DarkGrey:#2f3542
+    MediumGrey: #57606f
+    LightGrey: #dfe4ea
+    LightMediumGrey:#ced6e0
+    Orange:#ff6348;
+
+*/
+
+
+/* Global Styles
+-------------------------------
+-------------------------------*/
+
+/* border box fix */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: white;
+    margin: 0 20px;
+    font-family: 'Comfortaa', cursive;
+}
+.content-wrap {
+    max-width: 980px;
+    margin: auto;
+}
+h1 {
+    font-family: 'Coda', cursive;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 0;
+}
+
+h2{
+    color: white;
+    font-size: 2.5em;
+}
+span {
+    color: #ff6348
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+i{
+    font-size: 2em;
+}
+input[type=submit]{
+    padding: 15px 40px;
+    border-radius: 50px;
+    border:none;
+    text-transform: uppercase;
+}
+
+/* Navigation
+-------------------------------*/
+
+.logo{
+    width:185px;
+}
+.logo p{
+    margin: 0;
+    font-size: .95em;
+    letter-spacing: .02em
+}
+nav{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    background: white;
+    width: 95.4%;
+    padding: 20px 0;
+}
+/* Header
+-------------------------------*/
+header{
+    padding-top: 200px;
+    height: 790px;
+    text-align: center;
+    background:url(https://images.unsplash.com/photo-1458942521101-2f2fb506cee3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=e0b26121b8c2d71c2ded812f4a000f29) no-repeat;
+    background-size: cover;
+}
+header h2{
+    font-size: 5.5em;
+    background: rgba(0, 0, 0, 0.4);
+}
+header div{
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+}
+header div div{
+    padding: 30px 0;
+    font-size:16px;
+    width: 250px;
+    height: 185px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #dfe4ea;
+
+}
+header div div:first-of-type{
+    background: white;
+}
+header div div:last-of-type{
+    background: #ced6e0;
+}
+
+/* Find Out More
+-------------------------------*/
+
+.moreInfo {
+    background: #dfe4ea;
+    text-align: center;
+    padding: 20px 0;
+}
+.moreInfo h2{
+    color: #2f3542;
+}
+.moreInfo p{
+    font-size: .9em;
+}
+.moreInfo .content-wrap{
+    padding: 30px;
+}
+input[type=submit]{
+    background: #ff6348;
+    color: white;
+}
+/* Clients
+-------------------------------*/
+
+.clients {
+    background: white;
+    padding: 60px 0;
+}
+.clients .content-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+    color: #57606f;
+    text-align: center;
+}
+
+/* Services
+-------------------------------*/
+
+.services {
+    background: #57606f;
+    text-align: center;
+    padding: 50px;
+}
+
+
+/* Footer
+-------------------------------*/
+footer .content-wrap{
+    display: flex;
+}
+footer .content-wrap div{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 30px;
+}
+footer, footer a {
+    background: #2f3542;
+    color: white;
+}
+
+footer h2, footer h1{
+    font-size: 1.2rem;
+}
+
+footer a{
+    margin-top: 20px;
+}
+.copyright{
+    text-align: center;
+    border-top: white 2px solid;
+    padding: 30px;
+    margin: 0;
+}

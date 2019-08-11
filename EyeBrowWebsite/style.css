@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: white;
+  height: 1800px;
+}
+
+nav {
+  padding: 20px 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+}
+
+header {
+  background: green;
+  width: 100%;
+  height: 880px;
+  top: 80px;
+  border: white solid 20px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+main{
+  clear: both;
+  max-width: 1200px;
+  border: black solid 2px;
+  height: 800px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navigatie elementen */
+.logo {
+  border: black solid 3px;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  ;
+  align-items: center;
+}
+
+.logoGroot {
+  font-size: 2rem;
+}
+
+.logoKlein {
+  display: flex;
+  flex-direction: column;
+  font-size: .7rem;
+  width: 1rem;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Header */
+.box {
+  position: absolute;
+  border: white 15px solid;
+}
+
+h2.box {
+  width: 440px;
+  background: lightgrey;
+  height: 380px;
+  margin-left: calc((100%-980px)*0.5);
+  top: 150px;
+  z-index: 2;
+}
+
+.box.bgWhite {
+  width: 949px;
+  position: absolute;
+  top: 0px;
+  height: 860px;
+  background: white;
+  border: none;
+  margin-left: calc((100% - 1900px) * 0.5);
+}
+.box.image{
+  width: 850px;
+  height: 600px;
+  position: absolute;
+  background: yellow;
+  z-index: 1;
+  top: 70px;
+  margin-left: calc((100% - 1200px)*0.5);
+}
+.positionR{
+  position: relative;
+}
+/* Section */
+.bg{
+  width: 300px;
+  height: 300px;
+  background: orange;
+  position: relative;
+  margin-left: calc((100% - 1200px)*0.5);
+}

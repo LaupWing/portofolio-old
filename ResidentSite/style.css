@@ -1,0 +1,279 @@
+/* Globale styles
+-----------------------*/
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    text-align: center;
+    margin: 0;
+    overflow-x: hidden;
+    background: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 1.7em;
+    background: none;
+    color: white;
+    border: white solid 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    opacity: .7;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: rgba(255, 255, 255, .7);
+    color: rgba(0, 0, 0, .8);
+}
+p{
+    font-weight: 300;
+}
+h1,
+h2 {
+    font-family: 'Overpass Mono', monospace;
+}
+h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+}
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 400;
+}
+h2 {
+    font-weight: 200;
+}
+i{
+    font-size: 2em;
+    margin: .4em;
+}
+.content-wrap {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+.cover {
+    height: 515px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cover h2{
+    font-size: 4em;
+    margin: 0;
+}
+.cover h2::first-letter{
+    text-transform: capitalize;
+}
+.cover p{
+    font-weight: 200;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+section{
+    margin-bottom: 6em;
+}
+.sectionIntroduction{
+    padding: 80px 60px;
+}
+.sectionIntroduction p{
+    padding: 20px 110px 0;
+    line-height: 25px;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    flex-wrap: wrap;
+}
+
+.image-container.threecolumn {
+    width: 28%;
+}
+.image-container.twocolumn{
+    width: 47%;
+}
+.image-container.onecolumn{
+    width: 100%;
+}
+.image {
+    box-sizing: content-box;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.square{
+    padding-bottom: 100%;
+}
+.rectangle{
+    padding-bottom: 133%;
+}
+.lrectangle{
+    padding-bottom: 67%;
+}
+
+.image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+/* Navigation
+-----------------------*/
+
+.main-nav {
+    padding: 15px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+nav {
+    display: flex;
+    font-size: .9em
+}
+.main-nav h1 {
+    margin: 0;
+}
+nav li {
+    padding: 15px 25px;
+}
+nav li:last-of-type {
+    outline: solid 2px white;
+}
+
+/* Header
+-----------------------*/
+
+header {
+    height: 775px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(img/headerimg.jpg) no-repeat;
+    align-items: center;
+    background-size: cover;
+    color: white;
+}
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.7)
+}
+header p {
+    margin: .5em 0;
+    font-size: 3.7em;
+    font-family: 'Overpass Mono', monospace;
+    font-weight: 400;
+}
+
+/* Intro
+-----------------------*/
+
+.intro {
+    padding-top: 5em;
+}
+.intro h2 {
+    padding: 0 2em;
+    font-size: 1.7em;
+}
+.flexbox.intro{
+    margin-top: 80px;
+}
+
+/* Moreau
+-----------------------*/
+
+.cover.montreal {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://images.unsplash.com/photo-1521782462922-9318be1cfd04?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=1e4ddbc8accb98040872a196f945d89c);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flexbox.montreal{
+    margin-bottom: 5%;
+}
+
+/* Moreau
+-----------------------*/
+
+.cover.pacific{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://images.unsplash.com/photo-1513519245088-0e12902e5a38?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=21572c4e6b3657746554c3f841edb073);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pacific .image-container.onecolumn{
+    margin-bottom: 6%;
+}
+
+/* Buenos
+-----------------------*/
+.cover.buenos{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://images.unsplash.com/photo-1499955085172-a104c9463ece?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=523243e27a10cce02af7ad25315047e1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.elPanamericano .image-container.twocolumn{
+    margin-bottom: 6%
+}
+/* New York
+-----------------------*/
+.cover.newyork{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(https://images.unsplash.com/photo-1442975631115-c4f7b05b8a2c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=4870a5e81535bfc3d912cb1cd3a70d23);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.park .image-container.onecolumn{
+    margin-bottom: 6%;
+}
+/* Stockholm
+-----------------------*/
+.cover.stockholm{
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url(img/Stockholm/headerstockholm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sodermalm .flexbox > *{
+    margin-bottom: 6%;
+}
+footer{
+    background: rgba(0,0,0, .2);
+}
+footer div{
+    padding: 5%;
+    color: white;
+    background: rgba(0,0,0, .9);
+}
+footer section{
+    margin: 0;
+}
+.copyright{
+    color: rgba(255,255,255,.7)
+}

@@ -1,0 +1,252 @@
+/*    background: url(https://images.unsplash.com/photo-1489829024224-f5ef0434a0ca?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=4bac834d4d6160fafe78ce05beceb308);*/
+
+
+/*Globale styles
+-----------------------*/
+
+html {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: #051d11;
+    margin: 0;
+}
+.pinkbackground{
+    background: #fd06a2;
+}
+.content-wrap{
+    max-width: 920px;
+    margin: 0 auto;
+    overflow: auto; 
+}
+.resetmargin{
+    margin: 0;
+}
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,a{
+    color:#051d11;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin:0;
+    font-size: 4em;
+}
+h2{
+    font-size: 3.5em;
+}
+
+/*Header
+-----------------------*/
+header{
+    background: #fd06a2;
+    height: 70em;
+    min-width: 1200px;
+    padding-bottom: 4em;
+    position: relative;
+}
+.image-container{
+    background: url(https://images.unsplash.com/photo-1489829024224-f5ef0434a0ca?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=4bac834d4d6160fafe78ce05beceb308) no-repeat;
+    background-size: cover;
+    position:absolute;
+    height: 500px;
+    width: 80%;
+    left: 0;
+    z-index: 100;
+}
+/*Introductie
+-----------------------*/
+.topborder{
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: inline-block;
+    border-top: solid #fd06a2 7px;
+    margin: 5px 30px 0 0;
+}
+.intro{
+    display: inline-block;
+    position: relative;
+    left: 40vw;
+    top: 50%;
+}
+.introductie{
+    padding: 3em;
+    width: 685px;
+    height: 428px;
+    background: #78FFBC;
+}
+.introductie p{
+    display: inline;
+    font-family: 'Roboto', sans-serif;;
+}
+.btn{
+    padding: 1em;
+    float: right;
+    color: white;
+    font-size: 1.2em;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+
+/*Navigatie
+-----------------------*/
+nav, .logo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.logo{
+    padding: 0.8em 1.5em;
+    border: #051d11 8px solid;
+    top: 25px;
+    left: 20px;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-decoration: none;
+    position: fixed;
+    z-index: 500;
+    transition: all 0.4s ease 0s;
+}
+nav{
+    width: 790px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 0 8em;
+}
+nav a{
+    margin: 2em 1em;
+    padding: 1em;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+nav a:hover{
+    color: #1DFF06;
+}
+.logo:hover{
+    border-color: #1DFF06;
+    color: #1DFF06;
+}
+/*Footer
+-----------------------*/
+footer{
+    color: #fd06a2;
+    padding: 3em;
+}
+footer h2{
+    color: #fd06a2;
+    text-align: center;
+}
+
+/*Our services
+-----------------------*/
+.ourservices h2{
+    margin-bottom: 3em;
+    color:#fd06a2;
+}
+.card{
+    width: 279px;
+    height: 331px;
+    padding: 2em;
+    position: absolute;
+    background: #78FFBC;  
+    bottom: 10px;
+    right: 12px;
+    
+
+}
+.card-border{
+    position: relative;
+    display: inline-block;
+    width: 279px;
+    height: 331px;
+    margin: 1em;
+    border: 5px #78FFBC solid;
+}
+.offset{
+    position: relative;
+    bottom: 100px;
+    max-width: 950px;
+
+}
+
+.offset{
+    position: relative;
+    bottom: 100px;
+
+}
+/*Testimonials
+-----------------------*/
+.testimonials{
+    text-align: center;
+    padding: 5em;
+    background: #78FFBC;
+}
+.fas.fa-arrow-circle-left, .fas.fa-arrow-circle-right{
+    font-size: 3em;
+}
+/*Found out more
+-----------------------*/
+.findoutmore{
+    background: #fd06a2;
+    margin: 3em 0;
+    padding: 5em;
+}
+.findoutmore-content{
+    padding: 4em 6em;
+    background: #78FFBC;
+}
+
+/*Footer
+-----------------------*/
+
+form{
+    text-align: center;
+}
+form input{
+    background: transparent;
+    border: none;
+    color: #fd06a2;
+    border-bottom: #fd06a2 solid 2px;
+    margin-bottom: 2em;
+    font-size: 1.15em;
+}
+::placeholder{
+   color: #fd06a2; 
+}
+.name{
+    width: 45%;
+    margin-right: 9%;
+}
+.email{
+    width: 45%;
+}
+.message{
+    width: 100%;
+}
+.submit{
+   border: none; 
+}
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}

@@ -1,0 +1,338 @@
+/* Kleuren  
+Geel: #f1c40f
+Lichtzwart: #2c3e50
+Lichgrijs: #ecf0f1
+Grijs: #95a5a6
+gewoon white
+*/
+
+
+/* Globale styles
+----------------------*/
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background: url(VideoAndImages/City.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+h2 {
+    color: #95a5a6;
+    font-size: 3.5rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+}
+.border {
+    height: 11px;
+    width: 140px;
+    background: #f1c40f;
+}
+.border-horizontaal {
+    height: 70px;
+    width: 2px;
+    background-color: white;
+}
+
+/* Header en Nav
+----------------------*/
+
+.fixedbar {
+    background: #2c3e50;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.logo {
+    background: #f1c40f;
+    padding: 15px 10px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoafbeelding {
+    width: 80px;
+}
+.logotekstbox {
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.logotekst.bold {
+    font-weight: 500;
+}
+.logotekst.thin {
+    font-weight: 200;
+}
+nav {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+nav a {
+    padding: 20px;
+    margin: 10px;
+}
+header .content-wrap {
+    text-align: center;
+    margin: 200px auto 860px auto;
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+header i {
+    font-size: 5rem;
+}
+
+/* Services
+----------------------*/
+
+.services {
+    background-color: white;
+    padding: 70px 0 70px 0;
+}
+.services h2 {
+    text-align: center;
+    font-size: 3.5rem
+}
+.service-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.servicesDeel {
+    background: #ecf0f1;
+    width: 300px;
+}
+.service-tekst {
+    padding: 25px 20px;
+}
+.services .border {
+    margin: 0 auto;
+}
+.imagecontainer {
+    width: 300px;
+    height: 227px;
+}
+.imagecontainer.foto1 {
+    background: url(https://images.unsplash.com/photo-1531814742865-108af2165e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=7ce9c8acc2e3e0169638040e86226775);
+    background-size: cover;
+}
+.imagecontainer.foto2 {
+    background: url(https://images.unsplash.com/photo-1503026250792-7b068f66e5c6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=681c3a87bae5659eecbb8f3a48180d39);
+    background-size: cover;
+}
+.imagecontainer.foto3 {
+    background: url(https://images.unsplash.com/photo-1527199768775-bdabf8b32f61?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=a281732885f082edcf75e0c30eb4831d);
+    background-size: cover;
+}
+
+/* About
+----------------------*/
+
+.about {
+    background-image: linear-gradient(to left, transparent 50%, #ecf0f1 50%), url("VideoAndImages/City.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.about-content {
+    width: 50%;
+    padding: 50px 30px 60px 0;
+    font-size: 1.2em;
+}
+.about-content .border {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+/* Achievements
+----------------------*/
+
+.informatie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.achievements {
+    background: #f1c40f;
+    padding: 50px;
+}
+.informatie .categorie {
+    width: 177px;
+    display: flex;
+    flex-direction: column;
+}
+.informatie h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    margin: 0 auto;
+    text-align: center;
+}
+.informatie p {
+    margin: 0 auto;
+    font-size: 1.4em;
+    width: 120px;
+    font-weight: 500;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Projects
+----------------------*/
+
+.projects {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: white;
+    text-align: center;
+}
+.projects .border {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.projects .content-wrap div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-img {
+    width: 460px;
+    height: 460px;
+    background-color: purple;
+    margin-top: 30px;
+}
+.project-img.img1{
+    background: url(https://images.unsplash.com/photo-1506354614703-85beb9f9c2f5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=e727325baae2e1573bf94f9f5808d09d);
+    background-size: cover;
+}
+
+.project-img.img2{
+    background: url(https://images.unsplash.com/photo-1503135279369-a01d94b5c9e4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=5b623b49c396f9fe6587d8811c962507);
+    background-size: cover;
+}
+
+.project-img.img3{
+    background: url(https://images.unsplash.com/photo-1494352970903-9e3043c6b57e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=479ced66e0db19bd0e09ea91d7f658c4);
+    background-size: cover;
+}
+
+.project-img.img4{
+    background: url(https://images.unsplash.com/photo-1429497419816-9ca5cfb4571a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=0b81aaf3bbf4f43d75dee61c6c5cb2cd);
+    background-size: cover;
+}
+.project-img p {
+    display: none;
+}
+
+/* Clients
+----------------------*/
+.clients {
+    background: #ecf0f1;
+    margin-top: 220px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.clients .content-wrap div{
+    padding: 70px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.clients .content-wrap i{
+    font-size: 3em;
+/*    color: #95a5a6;*/
+}
+i:hover{
+    color: #f1c40f;
+    cursor: pointer;
+}
+/* Contact
+----------------------*/
+
+footer {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+}
+footer .border{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.contact-info >*{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.contactFirstHalf{
+    padding-right: 80px;
+}
+.contactSecondHalf{
+    padding-left: 50px;
+    padding-right: 80px;
+}
+form{
+    overflow: hidden;
+}
+input[type=text]{
+    width: 100%;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    border: none;
+    background: #ecf0f1;
+}
+input[name="message"]{
+    padding: 10px;
+    height: 120px;
+}
+input[type=submit]{
+    float: right;
+    padding: 10px 50px;
+    border: none;
+    background:#2c3e50;
+    font-weight: 900;
+    color:#f1c40f;
+    transition: all .4s;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background: #f1c40f;
+    color: #2c3e50;
+}
